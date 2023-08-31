@@ -1,0 +1,9 @@
+---
+- name: simple playbook
+  hosts: local
+  vars:
+    name: "Noname"
+  tasks:
+    - name: Show message
+      debug:
+        msg: "Hello {{ name }} from github It's simple_playbook2!"
