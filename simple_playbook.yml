@@ -2,7 +2,7 @@
 - name: simple playbook
   hosts: local
   vars:
-    - name: "Noname"
+    name: "Noname"
   tasks:
     - name: Show message
       debug:
