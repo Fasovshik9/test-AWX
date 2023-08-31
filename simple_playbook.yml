@@ -1,7 +1,9 @@
 ---
 - name: simple playbook
   hosts: local
+  vars:
+    - name: "Noname"
   tasks:
     - name: Show message
       debug:
-        msg: "Hello world from github!"
+        msg: "Hello {{ name }} from github!"
