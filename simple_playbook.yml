@@ -4,4 +4,4 @@
   tasks:
     - name: Show message
       debug:
-        msg: "Hello world!"
+        msg: "Hello world from github!"
