@@ -3,8 +3,8 @@
   debug:
     msg: "Test forgalaxy!"
     
-- name: Install a package using a role from community.general
+- name: Prevent Apache / httpd from being updated
   community.general.yum_versionlock:
-    name: 
-      - nano
     state: present
+    name:
+    - httpd
