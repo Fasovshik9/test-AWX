@@ -2,3 +2,8 @@
 - name: Show message
   debug:
     msg: "Test forgalaxy!"
+    
+- name: Install a package using a role from community.general
+  community.general.yum:
+    name: nano
+    state: present
