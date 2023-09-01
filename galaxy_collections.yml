@@ -1,0 +1,7 @@
+---
+- name: community general
+  hosts: local
+  tasks:
+    - name: community general
+      collections:
+        - community.general
