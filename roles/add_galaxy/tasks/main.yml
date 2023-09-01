@@ -1,0 +1,4 @@
+---
+- name: Show message
+  debug:
+    msg: "Test forgalaxy!"
