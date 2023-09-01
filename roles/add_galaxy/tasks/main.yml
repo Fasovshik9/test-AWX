@@ -3,8 +3,8 @@
   debug:
     msg: "Test forgalaxy!"
     
-- name: Prevent Apache / httpd from being updated
-  community.general.yum_versionlock:
+- name: Add repository `Sisysphus` and remove other repositories
+  community.general.apt_repo:
+    repo: Sisysphus
     state: present
-    name:
-    - httpd
+    remove_others: true
