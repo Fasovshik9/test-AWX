@@ -3,8 +3,5 @@
   debug:
     msg: "Test forgalaxy!"
     
-- name: Add repository `Sisysphus` and remove other repositories
-  community.general.apt_repo:
-    repo: Sisysphus
-    state: present
-    remove_others: true
+- name: Show python lib/site paths
+  community.general.python_requirements_info:
