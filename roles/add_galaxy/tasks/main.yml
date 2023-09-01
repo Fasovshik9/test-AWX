@@ -4,6 +4,6 @@
     msg: "Test forgalaxy!"
     
 - name: Install a package using a role from community.general
-  community.general.yum:
+  community.general.yum_versionlock:
     name: nano
     state: present
